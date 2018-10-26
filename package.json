@@ -1,0 +1,20 @@
+{
+  "name": "coupizzaDBApi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/charlesstocky/coupizzaDBApi.git",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "fbgraph": "^1.4.1",
+    "mongodb": "^3.0.3",
+    "twitter": "^1.7.1"
+  },
+  "scripts": {
+    "findFBAccounts": "node FBDataGen/accountFinder/app.js",
+    "findFBCodes": "node FBDataGen/codeFinder/app.js",
+    "findTWAccounts": "node TWDataGen/accountFinder/app.js",
+    "extendUAT": "node utils/extendUAT.js"
+  }
+}
