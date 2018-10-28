@@ -1,4 +1,12 @@
 version: '3'
 services: 
-  codeFinder: 
+  codefinder: 
+    build: .
+    command: npm run findTWAccounts
+    volumes: 
+      - ./.env:/coupizza/.env 
+  mongoDB:
+    image: 'mongo'
+    expose: 
+      - '27017'
     
